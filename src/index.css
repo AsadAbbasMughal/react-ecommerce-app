@@ -1,0 +1,13 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* Fix for fixed navbar */
+body {
+  padding-top: 80px; /* Navbar jitni height do */
+}
+
+/* Ensure main content takes full space */
+.main-content {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

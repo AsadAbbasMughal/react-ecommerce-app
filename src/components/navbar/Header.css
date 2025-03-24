@@ -1,0 +1,54 @@
+/* Golden Gradient Navbar */
+.custom-navbar {
+    background: linear-gradient(45deg, #d4af37, #b8860b);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  /* Logo styling */
+  .logo {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    font-weight: 600;
+    color: white !important;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: black !important;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* User dropdown */
+  #user-dropdown {
+    margin-left: 20px;
+  }
+  
+  #user-dropdown .dropdown-menu {
+    background-color: #d4af37;
+    border: none;
+    text-align: center;
+  }
+  
+  #user-dropdown .dropdown-item {
+    color: black;
+    font-weight: 500;
+  }
+  
+  #user-dropdown .dropdown-item:hover {
+    background-color: rgba(255, 215, 0, 0.8);
+  }
+  

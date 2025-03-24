@@ -1,0 +1,51 @@
+/* Golden Gradient Footer */
+.custom-footer {
+    background: linear-gradient(45deg, #d4af37, #b8860b);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Footer Titles */
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-links a,
+.list-unstyled li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover,
+.list-unstyled li a:hover {
+    color: black;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: black;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+}

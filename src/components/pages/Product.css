@@ -1,0 +1,104 @@
+.product-card {
+    width: 200px;  /* Smaller width */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    padding: 8px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-img {
+    height: 100px; /* Smaller image */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-title {
+    font-size: 12px; /* Smaller font */
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d4af37;
+  }
+  
+  .rating {
+    color: #ffcc00;
+    font-size: 12px;
+  }
+  
+  .buy-btn {
+    background: linear-gradient(45deg, #d4af37, #b8860b);
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+  }
+  
+  .buy-btn:hover {
+    background: linear-gradient(45deg, #b8860b, #d4af37);
+    color: black;
+    box-shadow: 0 2px 5px rgba(212, 175, 55, 0.5);
+  }
+  .product-img {
+    height: 120px;  /* Adjust image height */
+    width: 100%;  /* Full width */
+    object-fit: contain;  /* Show full image without cutting */
+    border-radius: 5px;
+    padding: 5px;
+    background: white; /* Ensure no background cuts */
+  }
+
+  /* Dropdown wrapper */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  /* Styled select box */
+  .dropdown-container select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .dropdown-container select:hover {
+    border-color: red;
+  }
+  
+  /* Selected option styling */
+  .dropdown-container select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 2px 5px rgba(212, 175, 55, 0.5);
+  }
+  
+  /* Option styles */
+  .dropdown-container option {
+    background: white;
+    color: #333;
+    padding: 5px;
+  }
+  .no-products {
+    min-height: 50vh; /* Kam az kam 50% viewport height */
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+  }
+  
