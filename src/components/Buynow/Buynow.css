@@ -1,0 +1,21 @@
+.buy-now-container {
+    padding: 50px 0;
+  }
+  
+  .order-summary, .checkout-form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .checkout-form button {
+    font-size: 18px;
+    padding: 10px;
+  }
+  

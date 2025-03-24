@@ -11,10 +11,13 @@ import AddToCart from "./components/pages/AddToCart/AddToCart.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import SinglePageProduct from "./components/singlePageProduct/SinglePageProduct.jsx";
 import { ToastContainer } from "react-toastify";
+import Buynow from "./components/Buynow/Buynow.jsx";
+
 
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [buynow, setBuynow] = useState([]);
 
   const handleAddToCart = (product) => {
 
@@ -58,17 +61,24 @@ function App() {
     setCart(removeCart)
   }
 
+  const buyNow = (data)=>{
+setBuynow(data)
+    console.log("ok", data);
+    
+  }
+
 
   return (
     <BrowserRouter>
       <Header cart={cart} />
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/products" element={<Product addtocart={handleAddToCart} />} />
+        <Route path="/products" element={<Product addtocart={handleAddToCart}  buyNow={buyNow}/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/add-to-cart" element={<AddToCart cart={cart} handleDec={handleDec} handleInc={handleInc} handleRemove={handleRemove} />} />
-        <Route path="/single-product/:id" element={<SinglePageProduct addtocart={handleAddToCart} />} />
+        <Route path="/add-to-cart" element={<AddToCart cart={cart} handleDec={handleDec} handleInc={handleInc} handleRemove={handleRemove}  />} />
+        <Route path="/single-product/:id" element={<SinglePageProduct addtocart={handleAddToCart}/>} />
+        <Route path="/buynow" element={<Buynow buyNow={buynow} />}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

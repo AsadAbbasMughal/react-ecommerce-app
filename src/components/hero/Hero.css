@@ -1,0 +1,55 @@
+/* General Styling */
+.hero-slider img {
+    height: 400px; /* Slider ki height set kar di */
+    object-fit: cover;
+  }
+  
+  /* Featured Categories */
+  .featured-categories {
+    padding: 50px 0;
+  }
+  
+  .category-card {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .category-icon {
+    font-size: 40px;
+    color: #d4af37;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Flash Sale */
+  .flash-sale {
+    padding: 50px 0;
+    background: #f8f9fa;
+  }
+  
+  .sale-card {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sale-card img {
+    height: 200px; /* Fixed height for consistency */
+    object-fit: contain;
+  }
+  
+  .sale-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
