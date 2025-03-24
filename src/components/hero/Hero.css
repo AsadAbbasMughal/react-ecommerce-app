@@ -52,4 +52,15 @@
     font-weight: bold;
     color: #555;
   }
+  .hero-slider img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+  }
+  @media (max-width: 768px) {
+    .hero-slider img {
+      height: 220px;
+    }
+  }
+    
   
