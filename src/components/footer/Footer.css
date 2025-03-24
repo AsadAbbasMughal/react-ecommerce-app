@@ -5,6 +5,7 @@
     padding: 30px 0;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
 /* Footer Logo */
@@ -23,7 +24,6 @@
 }
 
 /* Footer Links */
-.footer-links a,
 .list-unstyled li a {
     color: white;
     font-weight: 500;
@@ -31,7 +31,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.footer-links a:hover,
 .list-unstyled li a:hover {
     color: black;
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
@@ -48,4 +47,16 @@
 .social-icons a:hover {
     color: black;
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
 }

@@ -8,7 +8,7 @@ import {
   FaGithub,
   FaEnvelope,
 } from "react-icons/fa";
-import "./Footer.css"; // Custom styling for footer
+import "./Footer.css"
 
 function Footer() {
   return (
@@ -16,13 +16,13 @@ function Footer() {
       <Container className="p-4">
         <Row>
           {/* Left Side - Logo */}
-          <Col md={3} className="mb-4 mb-md-0">
+          <Col md={3} sm={6} className="mb-4 mb-md-0">
             <h5 className="footer-logo">LOGO</h5>
             <p>© 2025 Your Company. All Rights Reserved.</p>
           </Col>
 
-          {/* Middle - Links */}
-          <Col md={6} className="mb-4 mb-md-0">
+          {/* Middle - Quick Links */}
+          <Col md={6} sm={6} className="mb-4 mb-md-0">
             <Row>
               <Col xs={6}>
                 <h6 className="footer-title">Quick Links</h6>
@@ -45,7 +45,7 @@ function Footer() {
           </Col>
 
           {/* Right Side - Social Icons */}
-          <Col md={3} className="mb-4 mb-md-0">
+          <Col md={3} sm={12} className="mb-4 mb-md-0">
             <h6 className="footer-title">Follow Us</h6>
             <div className="social-icons">
               <a href="https://facebook.com"><FaFacebook /></a>
