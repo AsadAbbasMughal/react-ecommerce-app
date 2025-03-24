@@ -64,7 +64,7 @@ function App() {
       <Header cart={cart} />
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/products" element={<Product AddToCart={handleAddToCart} />} />
+        <Route path="/products" element={<Product addtocart={handleAddToCart} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/add-to-cart" element={<AddToCart cart={cart} handleDec={handleDec} handleInc={handleInc} handleRemove={handleRemove} />} />
