@@ -30,7 +30,7 @@ function AddToCart({ cart, handleDec, handleInc, handleRemove }) {
         {cart.map((item) => (
           <div className="cart-item" key={item.id}>
             <div className="item-info">
-              <img src={item.images} alt={item.name} className="product-image" />
+              <img src={item.images[0]} alt={item.name} className="product-image" />
               <div>
                 <h4 className="product-name">{item.title}</h4>
                 <p className="brand-name">{item.brand}</p>
