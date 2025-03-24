@@ -36,7 +36,7 @@ const Product = ({addtocart}) => {
 
   useEffect(() => {
     const allCat = async () => {
-      setLoading(true); // ✅ Loader ON
+      setLoading(true); // 
       try {
         const res = await axios('https://dummyjson.com/products/category-list');
         setAllCategory(res.data);
@@ -88,7 +88,7 @@ const Product = ({addtocart}) => {
             {allProductData.map((data, index) => (
               <Card key={index} className="product-card">
              <Link to={`/single-product/${data.id}`}>
-             <Card.Img  variant="top" src={data.images?.[0]} alt="Product" className="product-img" />
+             <Card.Img  variant="top" src={data.images[0]} alt="Product" className="product-img" />
              </Link>
                 <Card.Body className="text-center">
                   <Card.Title className="product-title">{data.title}</Card.Title>
