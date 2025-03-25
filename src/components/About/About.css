@@ -1,0 +1,50 @@
+/* Hero Section */
+.hero-section {
+    background: url('https://img.freepik.com/free-photo/keyboard-tea-cup-apple-office-stationeries-black-background_23-2148042011.jpg') 
+      no-repeat center center/cover;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-section h1, .hero-section p {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Icon Hover Effect */
+  .custom-icon {
+    color: #007bff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .custom-icon:hover {
+    color: #ff5722;
+    transform: scale(1.2);
+  }
+  
+ 
+  

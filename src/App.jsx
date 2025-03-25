@@ -12,6 +12,8 @@ import Hero from "./components/hero/Hero.jsx";
 import SinglePageProduct from "./components/singlePageProduct/SinglePageProduct.jsx";
 import { ToastContainer } from "react-toastify";
 import Buynow from "./components/Buynow/Buynow.jsx";
+import ContactSection from "./components/contact/ContactSection.jsx";
+import About from "./components/About/About.jsx";
 
 
 
@@ -79,6 +81,8 @@ setBuynow(data)
         <Route path="/add-to-cart" element={<AddToCart cart={cart} handleDec={handleDec} handleInc={handleInc} handleRemove={handleRemove}  />} />
         <Route path="/single-product/:id" element={<SinglePageProduct addtocart={handleAddToCart}/>} />
         <Route path="/buynow" element={<Buynow buyNow={buynow} />}/>
+        <Route path="/contact" element={<ContactSection />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
